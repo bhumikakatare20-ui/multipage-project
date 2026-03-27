@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TASK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-custom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white fw-bold" href="#">BHUMIKA KATARE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active  text-white " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white " href="aboutme.html">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white " href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="academic.html">Academic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contactme.html">Contact me</a>
+        </li>
+    </div>
+  </div>
+</nav>
+<!---end of navigation-->
+<div class="container-fluid gap" id="contactme">
+  <div class="container">
+    <h3 class="text-center fw-bold">CONTACT ME</h3>
+    <div class="row">
+      <div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.4446006668236!2d76.79789317368729!3d17.31188240497881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc8c733d20d26e3%3A0x85036f651bbff500!2sDigisnare%C2%AE%20Technologies!5e1!3m2!1sen!2sin!4v1774340056405!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="col-md-6">
+        <div class="border p-3">
+          <div class="row">
+          <div class="col-md-5">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Address</label>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Phone no</label>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Phone number</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of contact me-->
+<div class="container-fluid text-white bg-custom p-2 text-center">Design by bhumika katare</div>
+<!--end-->
+<button id="topBtn" class="btn bg-custom rounded-circle shadow">
+  <i class="bi bi-arrow-up"></i>
+</button>
+<script>
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
+
+topBtn.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
